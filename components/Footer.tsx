@@ -19,7 +19,7 @@ export default function Footer() {
                 alt="New Sanical SPRL"
                 width={285}
                 height={177}
-                className="h-12 w-auto brightness-0 invert opacity-90"
+                className="h-12 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-blue-200/80 text-sm leading-relaxed mb-4">
