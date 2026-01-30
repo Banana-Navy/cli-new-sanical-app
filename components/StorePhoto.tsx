@@ -14,11 +14,10 @@ export default function StorePhoto() {
                 Visitez notre magasin
               </h2>
               <p className="text-body-secondary text-lg leading-relaxed mb-8 mt-8">
-                Situé Place du Nord, 1 à Marchienne-au-Pont, notre magasin vous
-                accueille pour tous vos besoins en plomberie et chauffage. Notre
-                équipe qualifiée est à votre disposition pour vous conseiller et
-                vous aider à trouver les pièces et équipements dont vous avez
-                besoin.
+                Vous trouverez un vaste choix de pièces de remplacement pour vos
+                installations sanitaires et de chauffage dans notre magasin.
+                Notre personnel qualifié se tient à votre disposition pour vous
+                conseiller.
               </p>
             </AnimateOnScroll>
 

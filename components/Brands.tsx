@@ -12,9 +12,8 @@ export default function Brands() {
             Nos marques partenaires
           </h2>
           <p className="text-body-secondary text-lg max-w-2xl mx-auto mt-6">
-            Nous travaillons avec les meilleures marques du marché — Vaillant,
-            Viessmann, Grohe, Geberit et bien d&apos;autres — pour vous
-            garantir qualité et fiabilité.
+            Nous travaillons exclusivement avec des marques de haute qualité,
+            notamment Saint Roch, Viessmann et Vaillant.
           </p>
         </AnimateOnScroll>
 
@@ -22,7 +21,7 @@ export default function Brands() {
           <div className="bg-light rounded-2xl p-10 sm:p-14 inline-block border border-primary/10">
             <Image
               src="/images/logos-brands.jpg"
-              alt="Logos des marques partenaires de New Sanical : Vaillant, Viessmann, Grohe, Hansgrohe, Geberit, Ideal Standard, Villeroy & Boch, et bien d'autres"
+              alt="Logos des marques partenaires de New Sanical : Saint Roch, Viessmann, Vaillant et autres"
               width={300}
               height={500}
               className="max-w-full h-auto max-h-80 sm:max-h-96 w-auto object-contain mx-auto"
@@ -31,7 +30,7 @@ export default function Brands() {
         </AnimateOnScroll>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          {["Vaillant", "Viessmann", "Grohe", "Hansgrohe", "Geberit", "Ideal Standard", "Villeroy & Boch"].map((brand, index) => (
+          {["Saint Roch", "Viessmann", "Vaillant"].map((brand, index) => (
             <AnimateOnScroll
               key={brand}
               animation="fadeUp"

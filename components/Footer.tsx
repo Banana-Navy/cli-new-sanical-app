@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-blue-200/80 text-sm leading-relaxed mb-4">
-              Plombier-chauffagiste de confiance à Charleroi. Installation, dépannage et vente de pièces détachées.
+              Plombier-chauffagiste agréé à Charleroi. Installation, dépannage et vente de pièces détachées.
             </p>
             <div className="mt-5 space-y-3 text-sm text-blue-200/80">
               <p className="flex items-start gap-3">

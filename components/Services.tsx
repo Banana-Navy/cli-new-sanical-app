@@ -34,12 +34,11 @@ const services = [
   {
     title: "Plomberie - Sanitaire",
     description:
-      "Dépannage en urgence. Placement d'installations sanitaires : salle de bain, douche, baignoire. Un service fiable et professionnel à votre disposition.",
+      "Notre équipe dynamique et professionnelle intervient en urgence pour tout dépannage. Placement de vos installations sanitaires : salle de bain, douche, baignoire.",
     features: [
       "Dépannage d'urgence",
       "Salle de bain complète",
       "Douche et baignoire",
-      "Canalisations et robinetterie",
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,12 +55,11 @@ const services = [
   {
     title: "Vente de pièces détachées",
     description:
-      "Vaste choix de pièces de remplacement pour installations sanitaires et de chauffage. Personnel qualifié pour vous conseiller dans vos achats.",
+      "Vaste choix de pièces de remplacement pour vos installations sanitaires et de chauffage. Notre personnel qualifié se tient à votre disposition pour vous conseiller.",
     features: [
-      "Large stock disponible",
-      "Pièces toutes marques",
-      "Conseil personnalisé",
-      "Prix compétitifs",
+      "Vaste choix de pièces",
+      "Personnel qualifié",
+      "Conseil sur place",
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">

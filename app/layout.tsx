@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     template: "%s | New Sanical SPRL",
   },
   description:
-    "Entreprise de chauffage agréée, spécialisée en entretien, installation et dépannage de chauffage, plomberie et sanitaire à Charleroi et alentours. Disponible 7j/7.",
+    "Entreprise de chauffage agréée : installation, dépannage et entretien de chauffage, plomberie et sanitaire à Charleroi et alentours. Disponible 7j/7.",
   keywords:
-    "plombier, chauffagiste, Charleroi, chauffage, plomberie, sanitaire, dépannage, Marchienne-au-Pont, installation chauffage, entretien chaudière, Vaillant, Viessmann, Grohe, Geberit",
+    "plombier, chauffagiste, Charleroi, chauffage, plomberie, sanitaire, dépannage, Marchienne-au-Pont, installation chauffage, entretien chaudière, Saint Roch, Viessmann, Vaillant, pièces détachées",
   icons: {
     icon: "/images/logo.png",
     apple: "/images/logo.png",
@@ -32,17 +32,26 @@ export const metadata: Metadata = {
   openGraph: {
     title: "New Sanical SPRL - Plombier chauffagiste à Charleroi",
     description:
-      "Entreprise de chauffage agréée, spécialisée en entretien, installation et dépannage de chauffage, plomberie et sanitaire à Charleroi et alentours.",
+      "Entreprise de chauffage agréée : installation, dépannage et entretien de chauffage, plomberie et sanitaire à Charleroi et alentours.",
     locale: "fr_BE",
     type: "website",
     url: "https://www.newsanical.be",
     siteName: "New Sanical SPRL",
+    images: [
+      {
+        url: "/images/magasin.jpg",
+        width: 600,
+        height: 338,
+        alt: "New Sanical SPRL - Plombier chauffagiste à Charleroi",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "New Sanical SPRL - Plombier chauffagiste à Charleroi",
     description:
-      "Entreprise de chauffage agréée, spécialisée en entretien, installation et dépannage de chauffage, plomberie et sanitaire à Charleroi et alentours.",
+      "Entreprise de chauffage agréée : installation, dépannage et entretien de chauffage, plomberie et sanitaire à Charleroi et alentours.",
+    images: ["/images/magasin.jpg"],
   },
   robots: {
     index: true,
@@ -50,12 +59,12 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+const jsonLdBusiness = {
   "@context": "https://schema.org",
   "@type": "Plumber",
   name: "New Sanical SPRL",
   description:
-    "Entreprise de chauffage agréée, spécialisée en entretien, installation et dépannage de chauffage, plomberie et sanitaire à Charleroi et alentours.",
+    "Entreprise de chauffage agréée : installation, dépannage et entretien de chauffage, plomberie et sanitaire à Charleroi et alentours.",
   url: "https://www.newsanical.be",
   telephone: "+3271518850",
   email: "info@newsanical.be",
@@ -72,17 +81,13 @@ const jsonLd = {
     latitude: 50.41,
     longitude: 4.395,
   },
-  openingHours: "Mo-Su 00:00-23:59",
-  priceRange: "€€",
+  openingHours: "Mo-Su",
   image: "https://www.newsanical.be/images/logo.png",
+  logo: "https://www.newsanical.be/images/logo.png",
   brand: [
-    { "@type": "Brand", name: "Vaillant" },
+    { "@type": "Brand", name: "Saint Roch" },
     { "@type": "Brand", name: "Viessmann" },
-    { "@type": "Brand", name: "Grohe" },
-    { "@type": "Brand", name: "Hansgrohe" },
-    { "@type": "Brand", name: "Geberit" },
-    { "@type": "Brand", name: "Ideal Standard" },
-    { "@type": "Brand", name: "Villeroy & Boch" },
+    { "@type": "Brand", name: "Vaillant" },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -117,7 +122,74 @@ const jsonLd = {
     },
     geoRadius: "30000",
   },
-  sameAs: [],
+};
+
+const jsonLdWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "New Sanical SPRL",
+  url: "https://www.newsanical.be",
+  inLanguage: "fr-BE",
+};
+
+const jsonLdFaq = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Quels services propose New Sanical ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "New Sanical propose l'installation de chauffage central (gaz et mazout), le dépannage et l'entretien de plomberie et sanitaire, ainsi que la vente de pièces détachées pour installations sanitaires et de chauffage.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "New Sanical est-il disponible le week-end ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui, New Sanical est joignable 7 jours sur 7, y compris le samedi et le dimanche, pour répondre à vos urgences et demandes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Où se trouve le magasin New Sanical ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Le magasin New Sanical se situe Place du Nord, 1 à 6030 Marchienne-au-Pont (Charleroi), dans la province du Hainaut en Belgique.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quelles marques sont disponibles chez New Sanical ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "New Sanical travaille avec les meilleures marques : Vaillant, Viessmann, Grohe, Hansgrohe, Geberit, Ideal Standard, Villeroy & Boch, et bien d'autres.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Comment obtenir un devis gratuit ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Vous pouvez obtenir un devis gratuit en nous appelant au 071 51 88 50, en envoyant un email à info@newsanical.be, ou en remplissant le formulaire de contact sur notre site web.",
+      },
+    },
+  ],
+};
+
+const jsonLdBreadcrumbHome = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Accueil",
+      item: "https://www.newsanical.be",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -128,9 +200,23 @@ export default function RootLayout({
   return (
     <html lang="fr-BE">
       <head>
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="preconnect" href="https://maps.googleapis.com" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBusiness) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumbHome) }}
         />
       </head>
       <body className={`${inter.className} antialiased`}>
