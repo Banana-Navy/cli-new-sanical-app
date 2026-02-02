@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/magasin.jpg",
-        width: 600,
-        height: 338,
+        width: 300,
+        height: 169,
         alt: "New Sanical SPRL - Plombier chauffagiste à Charleroi",
       },
     ],
@@ -66,7 +66,7 @@ const jsonLdBusiness = {
   description:
     "Entreprise de chauffage agréée : installation, dépannage et entretien de chauffage, plomberie et sanitaire à Charleroi et alentours.",
   url: "https://www.newsanical.be",
-  telephone: "+3271518850",
+  telephone: "+32 71 51 88 50",
   email: "info@newsanical.be",
   address: {
     "@type": "PostalAddress",
@@ -81,7 +81,7 @@ const jsonLdBusiness = {
     latitude: 50.41,
     longitude: 4.395,
   },
-  openingHours: "Mo-Su",
+  openingHours: "Mo-Su 08:00-18:00",
   image: "https://www.newsanical.be/images/logo.png",
   logo: "https://www.newsanical.be/images/logo.png",
   brand: [
@@ -113,6 +113,7 @@ const jsonLdBusiness = {
       },
     ],
   },
+  priceRange: "€€",
   areaServed: {
     "@type": "GeoCircle",
     geoMidpoint: {
@@ -220,8 +221,14 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} antialiased`}>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-medium"
+        >
+          Aller au contenu principal
+        </a>
         <Header />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <Footer />
       </body>
     </html>

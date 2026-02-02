@@ -109,8 +109,8 @@ export default function StorePhoto() {
               <Image
                 src="/images/magasin.jpg"
                 alt="Devanture du magasin New Sanical SPRL, plombier chauffagiste à Marchienne-au-Pont, Charleroi"
-                width={600}
-                height={338}
+                width={300}
+                height={169}
                 className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />

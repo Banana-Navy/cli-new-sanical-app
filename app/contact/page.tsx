@@ -1,6 +1,25 @@
 import type { Metadata } from "next";
 import { ContactHero, ContactInfoCards, ContactFormSection } from "@/components/ContactPageClient";
 
+const jsonLdBreadcrumbContact = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Accueil",
+      item: "https://www.newsanical.be",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Contact",
+      item: "https://www.newsanical.be/contact",
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Contact - Devis gratuit",
   description:
@@ -19,6 +38,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumbContact) }}
+      />
       <ContactHero />
 
       <section className="py-20 sm:py-24 bg-light">
